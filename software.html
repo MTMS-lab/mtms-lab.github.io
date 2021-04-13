@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Nagarajan Lab @ Genome Institute of Singapore</title>
+<title>MTMS @ Genome Institute of Singapore</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="description" content="Nagarajan Lab Webpage" />
 <meta name="author" content="Niranjan Nagarajan" />
@@ -35,7 +35,10 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html"><span>N</span>agarajan Lab</a>
+                    <!-- <a class="navbar-brand" href="index.html"><span>N</span>agarajan Lab</a> -->
+										<a href="index.html">
+										<img src="img/mtms_logo.png" height="50" width="220" class="pull-left" alt="" style="vertical-align:middle;margin:30px 0px">
+										</a>
                 </div>
                 <div class="navbar-collapse collapse ">
                     <ul class="nav navbar-nav">
@@ -75,29 +78,440 @@
 
 	<section id="content">
 	  <div class="container">
-	    <div class="row">
-	      <div class="col-xs-12 col-lg-6">
-	      	<img src="img/software/OPERA-LG.jpg" height="140" width="140" class="pull-left" alt="" />
-		<ul style="list-style-type:none">
-		  <li><h4>OPERA-LG: Genome Scaffolder</h4></li>
-		  <li>Features: Robust & Efficient, Handles Repeats, Matepairs+Long-reads</li>
-		  <h6><li> Wiki: <a href="https://sourceforge.net/p/operasf/wiki/The%20OPERA%20wiki/" target="_blank">Link</a></li>
-		    <li>SourceForge: <a href="https://sourceforge.net/projects/operasf/" target="_blank">Download</a></li></h6>
-		</ul>
-	      </div>
-	      <div class="col-xs-12 col-lg-6">
-	      	<img src="img/software/lofreq.jpg" height="140" width="140" class="pull-left" alt="" />
-		<ul style="list-style-type:none">
-		  <li><h4>LoFreq: High Sensitivity Variant Caller</h4></li>
-		  <li>Features: SNPs+Indels, Fast, Rare variants (<1%)
-		  <h6><li>Github: <a href="http://csb5.github.io/lofreq/" target="_blank">Webpage & Blog</a></li>
-		    <li>SourceForge: <a href="https://sourceforge.net/projects/lofreq/" target="_blank">Download</a></li></h6>
-		</ul>
-	      </div>
+	    <ul class="nav nav-tabs">
+	      <li class="active"><a href="#packages" data-toggle="tab"><i class="icon-briefcase"></i>Software packages</a></li>
+	      <li><a href="#pipelines" data-toggle="tab">Bioinformatics pipelines</a></li>
+	      <li><a href="#scripts" data-toggle="tab">Scripts and datasets</a></li>
+	    </ul>
 
+	    <div class="tab-content">
+
+	    <div class="tab-pane active" id="packages">
+
+					<div class="row">
+						<div class="col-xs-12 col-lg-6">
+							<h3><span>Genome analysis</span></h3>
+						</div>
+					</div>
+
+			    <div class="row">
+
+			      <div class="col-xs-12 col-lg-6">
+			      	<!-- <img src="img/software/OPERA-LG.jpg" height="140" width="140" class="pull-left" alt="" /> -->
+							<ul style="list-style-type:none">
+							  <li><h4>OPERA-MS: Hybrid Metagenomic Assembler</h4></li>
+								<button class="button button4">genome assembly</button>
+								<button class="button button4">hybrid assembly</button>
+								<button class="button button4">metagenomic</button>
+								<br>
+								<button class="button button4">illumina</button>
+								<button class="button button4">nanopore</button>
+								<button class="button button4">pacbio</button>
+							  <li>A hybrid metagenomic assembler which combines the advantages of short and long-read technologies to provide high quality assemblies, addressing issues of low contiguity for short-read only assemblies, and low base-pair quality for long-read only assemblies.</li>
+							  <h6>
+							    <li>GitHub: <a href="https://github.com/CSB5/OPERA-MS" target="_blank">User manual and software</a></li>
+								</h6>
+							</ul>
+			      </div>
+			      <div class="col-xs-12 col-lg-6">
+						      	<!-- <img src="img/software/lofreq.jpg" height="140" width="140" class="pull-left" alt="" /> -->
+							<ul style="list-style-type:none">
+							  <li><h4>LoFreq: High Sensitivity Variant Caller</h4></li>
+								<button class="button button4">variant caller</button>
+								<button class="button button4">metagenomic</button>
+								<button class="button button4">cancer</button>
+							  <li>SNPs+Indels, Fast, Rare variants (<1%)</li>
+								<h6>
+							    <li>GitHub: <a href="http://csb5.github.io/lofreq/" target="_blank">User manual and software</a></li>
+									<li>SourceForge: <a href="https://sourceforge.net/projects/lofreq/" target="_blank">Download software</a></li></h6>
+								</h6>
+							</ul>
+			      </div>
+
+			    </div>
+
+					<div class="row">
+
+			      <div class="col-xs-12 col-lg-6">
+							<ul style="list-style-type:none">
+							  <li><h4>OPERA-LG: Genome Scaffolder</h4></li>
+								<button class="button button4">genome assembly</button>
+								<button class="button button4">metagenomic</button>
+								<button class="button button4">nanopore</button>
+								<button class="button button4">pacbio</button>
+							  <li>Robust & Efficient, Handles Repeats, Matepairs+Long-reads</li>
+							  <h6><li>Wiki: <a href="https://sourceforge.net/p/operasf/wiki/The%20OPERA%20wiki/" target="_blank">User manual</a></li>
+							    <li>SourceForge: <a href="https://sourceforge.net/projects/operasf/" target="_blank">Download software</a></li></h6>
+							</ul>
+			      </div>
+
+			      <div class="col-xs-12 col-lg-6">
+							<ul style="list-style-type:none">
+							  <li><h4>INC-Seq</h4></li>
+								<button class="button button4">nanopore</button>
+								<button class="button button4">pacbio</button>
+								<button class="button button4">rolling circle amplification</button>
+							  <li>Accurate single molecule reads using nanopore sequencing</li>
+								<h6>
+							    <li>GitHub: <a href="https://github.com/CSB5/INC-Seq" target="_blank">User manual and software</a></li>
+								</h6>
+			      </div>
+
+			    </div>
+
+					<div class="row">
+
+			      <div class="col-xs-12 col-lg-6">
+							<ul style="list-style-type:none">
+							  <li><h4>GiRaF</h4></li>
+								<button class="button button4">reassortments</button>
+								<button class="button button4">influenza</button>
+							  <li>Robust, Computational Identification of Influenza Reassortments via Graph Mining</li>
+								<h6>
+							    <li>GitHub: <a href="https://github.com/CSB5/GiRaF" target="_blank">User manual and software</a></li>
+								</h6>
+			      </div>
+
+			    </div>
+
+					<div class="row">
+						<div class="col-xs-12 col-lg-6">
+							<h3><span>Metagenomic system biology</span></h3>
+						</div>
+					</div>
+
+					<div class="row">
+
+			      <div class="col-xs-12 col-lg-6">
+			      	<!-- <img src="img/software/OPERA-LG.jpg" height="140" width="140" class="pull-left" alt="" /> -->
+							<ul style="list-style-type:none">
+							  <li><h4>BEEM: microbial community dynamics</h4></li>
+								<button class="button button4">microbial interactions</button>
+								<button class="button button4">metagenomic</button>
+								<button class="button button4">longitudinal data</button>
+								<button class="button button4">gLVM</button>
+							  <li>Modelling microbial community dynamics based on longitudinal metagenomic sequencing data (16S or shotgun-metagenomics). It is based on the commonly used generalized Lotka-Volterra modelling (gLVM) framework.</li>
+							  <h6>
+							    <li>GitHub: <a href="https://github.com/CSB5/BEEM" target="_blank">User manual and software</a></li>
+								</h6>
+							</ul>
+			      </div>
+			      <div class="col-xs-12 col-lg-6">
+						      	<!-- <img src="img/software/lofreq.jpg" height="140" width="140" class="pull-left" alt="" /> -->
+							<ul style="list-style-type:none">
+							  <li><h4>BEEM-static</h4></li>
+								<button class="button button4">microbial interactions</button>
+								<button class="button button4">metagenomic</button>
+								<button class="button button4">gLVM</button>
+							  <li>Learning directed microbial interactions from cross-sectional microbiome profiling data based on the generalized Lotka-Volterra model (gLVM).</li>
+								<h6>
+							    <li>GitHub: <a href="https://github.com/CSB5/BEEM-static" target="_blank">User manual and software</a></li>
+								</h6>
+							</ul>
+			      </div>
+
+			    </div>
+
+					<div class="row">
+
+			      <div class="col-xs-12 col-lg-6">
+			      	<!-- <img src="img/software/OPERA-LG.jpg" height="140" width="140" class="pull-left" alt="" /> -->
+							<ul style="list-style-type:none">
+							  <li><h4>@MInter</h4></li>
+								<button class="button button4">microbial interactions</button>
+								<button class="button button4">SVM</button>
+							  <li>SVM/regex abstract parser for identification of microbial interactions</li>
+							  <h6>
+							    <li>GitHub: <a href="https://github.com/CSB5/atminter" target="_blank">User manual and software</a></li>
+								</h6>
+							</ul>
+			      </div>
+
+						<div class="col-xs-12 col-lg-6">
+			      	<!-- <img src="img/software/OPERA-LG.jpg" height="140" width="140" class="pull-left" alt="" /> -->
+							<ul style="list-style-type:none">
+							  <li><h4>PLoT-ME</h4></li>
+								<button class="button button4">metagenomic</button>
+								<button class="button button4">taxonomic classification</button>
+								<button class="button button4">memory efficient</button>
+								<button class="button button4">long-read</button>
+								<br>
+								<button class="button button4">nanopore</button>
+								<button class="button button4">pacbio</button>
+							  <li>Pre-classification of Long-reads for Memory Efficient Taxonomic assignment</li>
+							  <h6>
+							    <li>GitHub: <a href="https://github.com/CSB5/PLoT-ME" target="_blank">User manual and software</a></li>
+								</h6>
+							</ul>
+			      </div>
+
+			    </div>
+
+
+					<div class="row">
+						<div class="col-xs-12 col-lg-6">
+							<h3><span>Cancer genomics</span></h3>
+						</div>
+					</div>
+
+					<div class="row">
+
+			      <div class="col-xs-12 col-lg-6">
+			      	<!-- <img src="img/software/OPERA-LG.jpg" height="140" width="140" class="pull-left" alt="" /> -->
+							<ul style="list-style-type:none">
+							  <li><h4>TUGDA</h4></li>
+								<button class="button button4">cancer</button>
+								<button class="button button4">drug response prediction</button>
+								<button class="button button4">domain adaptation</button>
+								<br>
+								<button class="button button4">gene expression profile</button>
+							  <li>Task uncertainty guided domain adaptation for robust generalization of cancer drug response prediction from in in vitro to in vivo settings</li>
+							  <h6>
+							    <li>GitHub: <a href="https://github.com/CSB5/TUGDA" target="_blank">User manual and software</a></li>
+								</h6>
+							</ul>
+			      </div>
+
+						<div class="col-xs-12 col-lg-6">
+			      	<!-- <img src="img/software/OPERA-LG.jpg" height="140" width="140" class="pull-left" alt="" /> -->
+							<ul style="list-style-type:none">
+							  <li><h4>OncoIMPACT</h4></li>
+								<button class="button button4">cancer driver prediction</button>
+								<button class="button button4">multiomics</button>
+								<br>
+								<button class="button button4">gene expression</button>
+								<button class="button button4">mutation</button>
+							  <li>OncoIMPACT is a first-in-class algorithmic framework that nominates patient-specific driver genes by integratively modeling genomic mutations (point, structural and copy-number) and the resulting perturbations in transcriptional programs via defined molecular networks.</li>
+							  <h6>
+							    <li>GitHub: <a href="https://github.com/CSB5/OncoIMPACT" target="_blank">User manual and software</a></li>
+								</h6>
+							</ul>
+			      </div>
+
+			    </div>
+
+					<div class="row">
+
+			      <div class="col-xs-12 col-lg-6">
+			      	<!-- <img src="img/software/OPERA-LG.jpg" height="140" width="140" class="pull-left" alt="" /> -->
+							<ul style="list-style-type:none">
+							  <li><h4>CaDRReS</h4></li>
+								<button class="button button4">cancer</button>
+								<button class="button button4">drug response prediction</button>
+								<button class="button button4">pharmacogenomic</button>
+								<br>
+								<button class="button button4">gene expression profile</button>
+							  <li>Cancer Drug Response prediction using a Recommender System (CaDRReS) is based on the matrix factorization approach to predict which drugs are sensitive for an unseen cell line.</li>
+							  <h6>
+							    <li>GitHub: <a href="https://github.com/CSB5/CaDRReS" target="_blank">User manual and software</a></li>
+								</h6>
+							</ul>
+			      </div>
+
+						<div class="col-xs-12 col-lg-6">
+			      	<!-- <img src="img/software/OPERA-LG.jpg" height="140" width="140" class="pull-left" alt="" /> -->
+							<ul style="list-style-type:none">
+							  <li><h4>CaDRReS-Sc</h4></li>
+								<button class="button button4">tumor heterogeneity</button>
+								<button class="button button4">drug response prediction</button>
+								<button class="button button4">pharmacogenomic</button>
+								<br>
+								<button class="button button4">scRNA-seq</button>
+								<button class="button button4">gene expression profile</button>
+							  <li>A framework for analyzing drug response heterogeneity based on single-cell RNA-seq data</li>
+							  <h6>
+							    <li>GitHub: <a href="https://github.com/CSB5/CaDRReS-Sc" target="_blank">User manual and software</a></li>
+								</h6>
+							</ul>
+			      </div>
+
+			    </div>
+
+					<div class="row">
+						<div class="col-xs-12 col-lg-6">
+							<h3><span>Others</span></h3>
+						</div>
+					</div>
+
+					<div class="row">
+
+			      <div class="col-xs-12 col-lg-6">
+			      	<!-- <img src="img/software/OPERA-LG.jpg" height="140" width="140" class="pull-left" alt="" /> -->
+							<ul style="list-style-type:none">
+							  <li><h4>EDDA</h4></li>
+								<button class="button button4">differential abundance</button>
+								<button class="button button4">experimental design</button>
+							  <li>Experimental Design in Differential Abundance analysis (EDDA) is a tool for systematic assessment of the impact of experimental design and the statistical test used on the ability to detect differential abundance.</li>
+							  <h6>
+							    <li>GitHub: <a href="https://github.com/CSB5/EDDA" target="_blank">User manual and software</a></li>
+								</h6>
+							</ul>
+			      </div>
+
+			    </div>
+
+	    <!-- End of packages	 -->
+			</div>
+
+	    <div class="tab-pane" id="pipelines">
+
+				<div class="row">
+
+					<div class="col-xs-12 col-lg-6">
+						<!-- <img src="img/software/OPERA-LG.jpg" height="140" width="140" class="pull-left" alt="" /> -->
+						<ul style="list-style-type:none">
+							<li><h4>Shotgun Metagnomics Pipeline (Nextflow)</h4></li>
+							<button class="button button4">metagenomic</button>
+							<button class="button button4">illumina</button>
+							<button class="button button4">nextflow</button>
+							<li>A Nextflow re-implementation of the original pipeline used by MTMS at the Genome Institute of Singapore (GIS).</li>
+							<h6>
+								<li>GitHub: <a href="https://github.com/CSB5/shotgunmetagenomics-nf" target="_blank">User manual and pipeline</a></li>
+							</h6>
+						</ul>
+					</div>
+
+					<div class="col-xs-12 col-lg-6">
+						<!-- <img src="img/software/OPERA-LG.jpg" height="140" width="140" class="pull-left" alt="" /> -->
+						<ul style="list-style-type:none">
+							<li><h4>GERMS 16S pipeline</h4></li>
+							<button class="button button4">metagenomic</button>
+							<button class="button button4">illumina</button>
+							<button class="button button4">16S</button>
+							<li>a remake of the original 16S pipeline developed with in the Genome Institute of Singapore, designed for Illumina shotgun sequencing of 16S rRNA amplicon sequences <a href="http://www.ncbi.nlm.nih.gov/pubmed/23579286">(Ong et al., 2013)</a></li>
+							<h6>
+								<li>GitHub: <a href="https://github.com/CSB5/GERMS_16S_pipeline" target="_blank">User manual and pipeline</a></li>
+							</h6>
+						</ul>
+					</div>
+
+				</div>
+
+				<div class="row">
+
+					<div class="col-xs-12 col-lg-6">
+						<ul style="list-style-type:none">
+							<li><h4>ViPR2</h4></li>
+							<button class="button button4">assembly</button>
+							<button class="button button4">virus</button>
+							<button class="button button4">amplicon</button>
+							<li>A collection of scripts used for the analysis of RNA viruses, based on LoFreq</li>
+							<h6>
+								<li>GitHub: <a href="https://github.com/CSB5/ViPR2" target="_blank">User manual and pipeline</a></li>
+							</h6>
+					</div>
+
+					<div class="col-xs-12 col-lg-6">
+						<!-- <img src="img/software/OPERA-LG.jpg" height="140" width="140" class="pull-left" alt="" /> -->
+						<ul style="list-style-type:none">
+							<li><h4>decont</h4></li>
+							<button class="button button4">bwa-mem</button>
+							<button class="button button4">decontamination</button>
+							<li>Decontaminate FastQ files by mapping with BWA-MEM against a given source.</li>
+							<h6>
+								<li>GitHub: <a href="https://github.com/CSB5/decont" target="_blank">User manual and pipeline</a></li>
+							</h6>
+						</ul>
+					</div>
+
+				</div>
+
+
+				<div class="row">
+
+					<div class="col-xs-12 col-lg-6">
+						<ul style="list-style-type:none">
+							<li><h4>Cancer driver benchmarking</h4></li>
+							<button class="button button4">cancer driver</button>
+							<button class="button button4">benchmarking</button>
+							<li>Pipeline for mutation benchmarking of various softwares.</li>
+							<h6>
+								<li>GitHub: <a href="https://github.com/CSB5/driver-benchmarking" target="_blank">Scripts</a>
+								</li>
+							</h6>
+						</ul>
+					</div>
+
+				</div>
+
+
+			<!-- End of pipelines	 -->
 	    </div>
-	  </div>
-	</section>
+
+			<div class="tab-pane" id="scripts">
+
+				<div class="row">
+
+					<div class="col-xs-12 col-lg-6">
+						<ul style="list-style-type:none">
+							<li><h4>Hospital Microbiome Explorer</h4></li>
+							<li>a proof-of-concept 3D model to explore the hospital microbiome survey data associated with our manuscript <a h
+								="https://github.com/CSB5/hospital_microbiome_explorer#citation">(Chng et al, 2020).</a></li>
+							<h6>
+								<li>GitHub: <a href="https://github.com/CSB5/hospital_microbiome_explorer" target="_blank">Source code</a>
+								</li>
+								<li>3D explorer: <a href="https://simmer.io/@lichenhao/hospital-microbiome-explorer" target="_blank">Try it online</a>
+								</li>
+							</h6>
+						</ul>
+					</div>
+
+					<div class="col-xs-12 col-lg-6">
+						<ul style="list-style-type:none">
+							<li><h4>AD-caregiver-manuscript</h4></li>
+							<li>Shared signatures and divergence in skin microbiomes of children with atopic dermatitis and their adult caregivers</li>
+							<h6>
+								<li>GitHub: <a href="https://github.com/CSB5/AD-caregiver-manuscript" target="_blank">Data and scripts</a>
+								</li>
+							</h6>
+						</ul>
+					</div>
+
+				</div>
+
+				<div class="row">
+
+					<div class="col-xs-12 col-lg-6">
+						<ul style="list-style-type:none">
+							<li><h4>Antibiotic recovery study</h4></li>
+							<li>Metagenome-wide association analysis identifies microbial determinants of post-antibiotic ecological recovery in the gut</li>
+							<h6>
+								<li>GitHub: <a href="https://github.com/CSB5/Recovery_Determinants_Study" target="_blank">Data and scripts</a>
+								</li>
+							</h6>
+						</ul>
+					</div>
+
+					<div class="col-xs-12 col-lg-6">
+						<ul style="list-style-type:none">
+							<li><h4>Cancer driver evaluation</h4></li>
+							<li>Evaluating cancer driver prediction methods and compare them against predictions obtained from 18 different existing methods on 15 TCGA cancer types</li>
+							<h6>
+								<li>GitHub: <a href="https://github.com/CSB5/driver_evaluation" target="_blank">Scripts</a>
+								</li>
+							</h6>
+						</ul>
+					</div>
+
+				</div>
+
+				<div class="row">
+
+					<div class="col-xs-12 col-lg-6">
+						<ul style="list-style-type:none">
+							<li><h4>SPLASH</h4></li>
+							<li>Analyzing data from the SPLASH protocol for generating in vivo RNA interactome maps</li>
+							<h6>
+								<li>GitHub: <a href="https://github.com/CSB5/splash" target="_blank">Scripts</a>
+								</li>
+							</h6>
+						</ul>
+					</div>
+
+				</div>
+
+			<!-- End of scripts	 -->
+	    </div>
 
 	<!-- start footer -->
 	<footer>
@@ -107,7 +521,7 @@
 				<div class="widget">
 					<h5 class="widgetheading">Get in touch with us</h5>
 					<address>
-						<strong>Nagarajan Lab</strong><br>
+						<strong>MTMS</strong><br>
 						 Genome Building<br>
 						 # 02-01<br>
 						 60 Biopolis Street<br>
