@@ -1732,6 +1732,13 @@ img.pull-left, .align-left{
 	margin:0 15px 15px 0;
 }
 
+img.pull-left-icon{
+	float:left;
+	margin:0 15px 15px 0;
+	vertical-align: middle;
+}
+
+
 .widget img.pull-left {
 	float:left;
 	margin:0 15px 15px 0;
